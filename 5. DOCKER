@@ -528,6 +528,77 @@ docker-compose stop
 Supported filenames: docker-compose.yml, docker-compose.yaml, compose.yml, compose.yaml
 docker-compose -f raham.yml stop
 
+
+
+history : 
+yum update -y
+    2  yum install docker -y
+    3  systemctl start docker 
+    4  systemctl status docker
+    5  vim Dockerfile
+    6  vim index.html
+    7  docker build -t movies:v1 .
+    8  docker images
+    9  docker run -itd --name movies -p 81:80 movies:v1
+   10  vim index.html 
+   11  docker build -t train:v1 .
+   12  docker images
+   13  docker run -itd train -p 82:80 train:v1
+   14  docker images
+   15  docker run -itd --name train -p 82:80 train:v1
+   16  vim index.html 
+   17  docker build -t dth:v1 .
+   18  docker images
+   19  docker run -itd --name tarin -p 83:80 dth:v1
+   20  vim index.html 
+   21  docker build -t flight:v1 .
+   22  docker run -itd --name fligh -p 84:80  fligh:v1
+   23  docker run -itd --name flight -p 84:80  flight:v1
+   24  docker images
+   25  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   26  ls /usr/local/bin/
+   27  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+   28  sudo chmod +x /usr/local/bin/docker-compose
+   29  docker-compose version
+   30  vim docker-compose.yml
+   31  docker images
+   32  vim docker-compose.yml
+   33  docker-compose up -d
+   34  sed -i 's/port/ports/g' docker-compose.yml 
+   35  docker-compose up -d
+   36  cat docker-compose.yml 
+   37  vim docker-compose.yml 
+   38  docker-compose up -d
+   39  docker kill $(docker ps -a -q)
+   40  docker rm $(docker ps -a -q)
+   41  docker ps -a
+   42  docker-compose up -d
+   43  docker-compose down
+   44  docker ps -a
+   45  docker-compose up -d 
+   46  docker-compose stop
+   47  docker-compose start
+   48  docker-compose paused
+   49  docker ps -a
+   50  docker-compose images
+   51  docker images
+   52  docker-compose ps
+   53  docker-compose ps -a
+   54  docker-compose logs
+   55  docker-compose kill
+   56  docker-compose start
+   57  docker-compose scale dth=10
+   58  docker ps -a
+   59  docker-compose rm movies
+   60  docker-compose rm dth
+   61  docker-compose kill
+   62  docker-compose rm
+   63  docker-compose up 
+   64  docker ps
+   65  docker-compose top
+   66  ll
+   67  history
+
 =================================
 
 DOCKER HUB:
